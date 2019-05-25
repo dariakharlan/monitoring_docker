@@ -1,0 +1,16 @@
+version: '3'
+services:
+  php-apache:
+    image: webdevops/php-apache
+    volumes:
+      - ./app:/app
+      - ./httpd.conf:/opt/docker/etc/httpd/conf.d/httpd_mod_status.conf
+    ports:
+      - 80:80
+
+  php-nginx:
+    image: webdevops/php-nginx
+    volumes:
+      - ./app:/app
+    ports:
+      - 8080:80
