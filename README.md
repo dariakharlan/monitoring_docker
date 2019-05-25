@@ -7,3 +7,9 @@
 
 ### CPU usage
 ![cpu usage](https://github.com/dariakharlan/monitoring_docker/blob/master/cpu_usage.png)
+
+Results:
+* On big amount of requests Apache uses more cpu than nginx 
+* Time to serve requests is a bit bigger for Apache than Nginx
+* RPS is almost similar
+So, when you need to process a lot of requests nginx seems more efficient 
